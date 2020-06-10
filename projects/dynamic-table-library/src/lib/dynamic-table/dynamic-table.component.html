@@ -1,0 +1,33 @@
+<div class="table-container">
+  <table class="table" *ngIf="dataset">
+    <thead>
+      <th *ngFor="let header of tableConfig.headers"
+        [ngStyle]="{'width.%': header.columnWidth}">
+        {{header.label}}
+      </th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of dataset">
+        <td [attr.colspan]="tableConfig.headers.length">
+          <ng-container [ngSwitch]="data.ContentType">
+            <dt-site-group-table *ngSwitchCase="'Site'"
+              [data]="data"
+              [tableConfig]="tableConfig">
+            </dt-site-group-table>
+            <dt-task-group-table *ngSwitchCase="'Task'"
+              [data]="data"
+              [tableConfig]="tableConfig">
+            </dt-task-group-table>
+            <dt-notes-group-table *ngSwitchDefault
+              [data]="data"
+              [tableConfig]="tableConfig">
+            </dt-notes-group-table>
+          </ng-container>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div *ngIf="!dataset">
+    <p>No results to display.</p>
+  </div>
+</div>

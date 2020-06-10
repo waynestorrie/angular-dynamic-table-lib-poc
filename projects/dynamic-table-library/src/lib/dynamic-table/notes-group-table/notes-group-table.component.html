@@ -1,0 +1,8 @@
+<table>
+  <tr>
+    <td *ngFor="let header of tableConfig.headers"
+      [ngStyle]="{ 'width.%': header.columnWidth }">
+      {{ data[header.selectorId][header.propertyId] }}
+    </td>
+  </tr>
+</table>

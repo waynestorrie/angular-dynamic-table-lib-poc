@@ -1,0 +1,86 @@
+[
+  {
+    "ContentType": "Task",
+    "Content": {
+      "TaskName": "Task Name",
+      "TaskStatus": "Completed",
+      "AgreementStatus": "Active"
+    },
+    "ChildElements": [
+      {
+        "ContentType": "Note",
+        "Content": {
+          "Id": 0,
+          "Body": "This is a note, a really cool note",
+          "ClientId": 12345,
+          "NoteTypeId": 0,
+          "Archived": false,
+          "IsConfidential": false,
+          "IsImportant": false,
+          "CreatedDate": "2019-01-01T00:00:00.0001122+01:00",
+          "CreatedBy": "A.Person",
+          "ModifiedDate": null,
+          "ModifiedBy": null
+        }
+      },
+      {
+        "ContentType": "Note",
+        "Content": {
+          "Id": 0,
+          "Body": "This is a note, a really cool note",
+          "ClientId": 12345,
+          "NoteTypeId": 0,
+          "Archived": false,
+          "IsConfidential": false,
+          "IsImportant": false,
+          "CreatedDate": "2019-01-01T00:00:00.0001122+01:00",
+          "CreatedBy": "A.Person",
+          "ModifiedDate": null,
+          "ModifiedBy": null
+        }
+      }
+    ]
+  },
+  {
+    "ContentType": "Task",
+    "Content": {
+      "TaskName": "Task Name",
+      "TaskStatus": "Completed",
+      "AgreementStatus": "Active"
+    },
+    "ChildElements": [
+      {
+        "ContentType": "Note",
+        "Content": {
+          "Id": 0,
+          "Body": "This is a note, a really cool note",
+          "ClientId": 12345,
+          "NoteTypeId": 0,
+          "Archived": false,
+          "IsConfidential": false,
+          "IsImportant": false,
+          "CreatedDate": "2019-01-01T00:00:00.0001122+01:00",
+          "CreatedBy": "A.Person",
+          "ModifiedDate": null,
+          "ModifiedBy": null
+        }
+      },
+      {
+        "ContentType": "Note",
+        "Content": {
+          "Id": 0,
+          "Body": "This is a note, a really cool note",
+          "ClientId": 12345,
+          "NoteTypeId": 0,
+          "Archived": false,
+          "IsConfidential": false,
+          "IsImportant": false,
+          "CreatedDate": "2019-01-01T00:00:00.0001122+01:00",
+          "CreatedBy": "A.Person",
+          "ModifiedDate": null,
+          "ModifiedBy": null
+        }
+      }
+    ]
+  }
+]

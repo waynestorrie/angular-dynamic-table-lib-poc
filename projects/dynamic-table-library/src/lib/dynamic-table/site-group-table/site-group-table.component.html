@@ -1,0 +1,24 @@
+<table>
+  <tr>
+    <td>
+      {{data.Content.SiteName}} - {{data.Content.AddressLine1}} - {{data.Content.AddressLine2}}
+    </td>
+  </tr>
+  <tr *ngFor="let task of data.ChildElements">
+    <td>
+      <table>
+        <tr>
+          <td [attr.colspan]="tableConfig.headers.length">
+            {{task.Content.TaskName}} - {{task.Content.TaskStatus}} - {{task.Content.AgreementStatus}}
+          </td>
+        </tr>
+        <tr *ngFor="let note of task.ChildElements">
+          <td *ngFor="let header of tableConfig.headers"
+            [ngStyle]="{'width.%': header.columnWidth}">
+            {{note[header.selectorId][header.propertyId]}}
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

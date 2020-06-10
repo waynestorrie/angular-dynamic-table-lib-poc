@@ -1,0 +1,24 @@
+[
+  {
+    "ContentType": "Note",
+    "Content": {
+      "Id": 0,
+      "Body": "This is a note, a really cool note",
+      "CreatedDate": "2019-01-01T00:00:00.0001122+01:00",
+      "CreatedBy": "A.Person",
+      "ModifiedDate": null,
+      "ModifiedBy": null
+    }
+  },
+  {
+    "ContentType": "Note",
+    "Content": {
+      "Id": 0,
+      "Body": "This is a note, a really cool note",
+      "CreatedDate": "2019-01-01T00:00:00.0001122+01:00",
+      "CreatedBy": "A.Person",
+      "ModifiedDate": null,
+      "ModifiedBy": null
+    }
+  }
+]

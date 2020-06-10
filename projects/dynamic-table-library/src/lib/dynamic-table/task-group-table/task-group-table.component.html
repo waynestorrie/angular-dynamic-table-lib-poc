@@ -1,0 +1,11 @@
+<table>
+  <tr>
+    <td>{{ data.Content.TaskName }}</td>
+  </tr>
+  <tr *ngFor="let note of data.ChildElements">
+    <td *ngFor="let header of tableConfig.headers"
+      [ngStyle]="{ 'width.%': header.columnWidth }">
+      {{ note[header.selectorId][header.propertyId] }}
+    </td>
+  </tr>
+</table>
